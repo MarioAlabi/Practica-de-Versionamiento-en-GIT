@@ -1,0 +1,72 @@
+/* Paleta y base tipográfica */
+:root {
+  --vino: darkred;
+  --vino-oscuro: firebrick;
+  --gris-fondo: whitesmoke;
+  --borde: lightgray;
+  --texto: black;
+  --enlace: darkred;
+  --max-ancho: 800px;   
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.55;
+  color: var(--texto);
+  background: var(--gris-fondo);
+}
+
+.encabezado {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 4px solid var(--vino);
+}
+.encabezado h1 {
+  margin: 0;
+  color: var(--vino);
+  text-transform: uppercase;
+}
+.subtitulo {
+  margin-top: .25rem;
+  color: dimgray;
+}
+
+.contenedor {
+  max-width: var(--max-ancho);
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px gray;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px gray;
+}
+.card h2 {
+  margin-top: 0;
+  color: var(--vino);
+  border-bottom: 2px solid var(--vino);
+  padding-bottom: .25rem;
+}
+.card p {
+  margin: .75rem 0 0;
+  color: black;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  color: dimgray;
+}
