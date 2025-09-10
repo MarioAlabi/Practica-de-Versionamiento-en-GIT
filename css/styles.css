@@ -70,21 +70,3 @@ body {
   padding: 1rem;
   color: dimgray;
 }
-
-.card-contenido {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-
-.card-texto {
-  flex: 1;
-}
-
-.card-img {
-  width: 150px;    
-  height: auto;
-  border-radius: 6px;
-}
-
